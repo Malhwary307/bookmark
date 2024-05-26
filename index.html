@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <h1 class="text-center  mt-4 mx-auto pacifico-regular position-relative ">Bookmarker</h1>
+    
+      <hr class="mt-5">
+      <div class=" mx-auto ">
+        <h2 class=" text-center mb-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+        
+
+
+
+        <div class=" mb-4">
+          <label for="siteName" class="mb-2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+          <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+          
+        </div>
+
+        <div class=" mb-3">
+          <label for="siteURL" class="mb-2"><i class="fa-solid fa-link"></i> Site URL</label>
+          <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+         
+        </div>
+
+   
+      
+        
+        <button id="subBtn" onclick="addProduct()"  class="btn btn-danger px-5 d-block mx-auto ">Submit</button>
+       
+<hr>
+      </div>
+    </div>
+    <div class="container">
+      
+        <table class="table text-center ">
+        <tr >
+          <td>Index</td>
+          <td>Website Name</td>
+          <td>Visit</td>
+          <td>Delete</td>
+        </tr>
+      </table>
+        <div  id="myBody">
+     
+        </div>
+      </div>
+    
+
+      
+  
+
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
